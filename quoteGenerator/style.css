@@ -54,3 +54,17 @@ body{
     font-weight: bold;
     color: red;
 }
+
+/* .btn{
+    border-radius: px;
+} */
+
+.btn .next-quote{
+    font-size: 1.1rem;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
