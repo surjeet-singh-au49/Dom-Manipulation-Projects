@@ -210,7 +210,6 @@ nextQuote.addEventListener('click', function() {
 
     // Update the quote and person elements with the selected quote
     quotes.textContent = famousQuotes[randomQuote].quote;
-    person.textContent = famousQuotes[randomQuote].author;
+    person.textContent = "-" + famousQuotes[randomQuote].author;
 });
 
-console.log("hello world")

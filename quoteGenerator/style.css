@@ -11,7 +11,7 @@ body{
     justify-content: center;
     text-align: center;
     height: 100vh;
-    background: burlywood url("img/aaron-burden-QJDzYT_K8Xg-unsplash.jpg") no-repeat center center/ cover;
+    background: burlywood url("./../img/quoteGenBackground.jpg") no-repeat center center/ cover;
 }
 
 #container{
