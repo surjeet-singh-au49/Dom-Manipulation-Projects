@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ /* Styling for task which will be added from container  */
 body {
     height: 100vh;
     background: #B7B09C url('./../img/todoBackground.jpg') no-repeat  center/ cover;
@@ -18,6 +18,7 @@ body {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 3px;
+    margin-bottom: 20px;
 
     display: flex;
 }
@@ -46,4 +47,60 @@ input{
     background-color: green;
     color: #fff;
 
+}
+
+/* styling for task which will be add to to-do list*/
+
+.task{
+    width: 350px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.task li{
+    list-style: none;
+    flex: 4; 
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 3px;
+}
+
+.task button {
+    flex: 0.8;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.task .checkTask{
+    color: orange;
+    margin-right: 5px;
+    border: 2px solid orange;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+
+
+.task .deleteTask{
+    color: red;
+    margin-right: 5px;
+    border: 2px solid red;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+.task .checkTask:hover, .task .checkTask.checked{
+    color: #fff;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.task .deleteTask:hover{
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
 }
