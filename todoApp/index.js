@@ -32,4 +32,29 @@ addTask.addEventListener('click', function() {
         taskContainer.appendChild(task);
     }
 
+    inputTask.value = ""
+
+
+    // Check Button Functionality;
+
+    checkButton.addEventListener('click', function() {
+        let parentElement = checkButton.parentElement;
+
+        parentElement.classList.toggle('checked');
+
+        if(parentElement.style.textDecoration === 'line-through'){
+            parentElement.style.textDecoration = '';
+            li.style.color = 'black'
+        }else {
+            parentElement.style.textDecoration = 'line-through'
+            li.style.color = 'red'
+
+        }
+    })
+
+    // Delete Button Functionality;
+
+    deleteButton.addEventListener('click', function(){
+        taskContainer.removeChild(task);
+    })
 })
